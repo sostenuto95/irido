@@ -161,6 +161,7 @@ input, select, textarea {
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		border-bottom: dotted 1px;
 		text-decoration: none;
+	
 	}
 
 		a:hover {
@@ -2589,9 +2590,10 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border: 0;
+		border: 2px;
 		display: inline-block;
 		position: relative;
+		border-radius: 20px;
 	}
 
 		.image img {
