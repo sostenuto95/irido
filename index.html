@@ -50,10 +50,36 @@
 			} 
 			.centered {
 				position: absolute;
-				top: 35%;
+				top: 10%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+			.colum{
+				float: left;
+				width: 33.33%;
+				padding: 5px;
+				}
+			.row::after {
+				content: "";
+				clear: both;
+				display: table;
+				}
 			}
+			.button {
+				border: black;
+				border-radius: 20px;
+				color: rgb(225, 220, 220);
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 8px 12px;
+				cursor: pointer;
+				}
+
+				.button1 {background-color: #4fc2e89a;} /* Open Workspace */
+				.button2 {background-color: #ae5cb952;} /* Common Area */
+				.button3 {background-color: #2d323437;} /* Conference Room */
 		</style> 
 
 	</head>
@@ -66,7 +92,7 @@
 					<div id="intro">
 						<h1>irido <br />
 						</h1>
-						<p> Enhance experience in your mundane <span></span>.</p>
+						<p> Noise Mitigation and experience enhancement in your mundane <span></span>.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -98,15 +124,44 @@
 							<article class="post featured">
 								<header class="major">
 									<div class="box">
-									<h2><a href="#">
-										such that YOU feel good and motiviated.</a></h2>
+									<h1>
+										such that YOU feel good and motiviated.</h1>
 										
 									</div>
 									
 								
 								</header>
-								<a class="image fit"><img src="images/Evaluation 1.jpeg" alt="" /><figcaption>Jazz Duo from the HKU Utrechts Conservatorium</figcaption></a>
+							
+								<div class="container">
+									<img src="images/Serverance.png" alt="Snow" style="width:100%;">
+									<div class="centered"><h3>Traditionally we have…<br /> but could we offer something different?</h3></div>
+								</div>
+
+								<h2>Brochures for :</h2>
+								<button class="button button1"><a href = "images/Brochure/Open Workspace Brochure.pdf"> Open Workspace </a></button>
+								<button class="button button2"><a href = "images/Brochure/Common Area Brochure.pdf"> Common Area </a></button>
+								<button class="button button3"><a href = "images/Brochure/Conference Room Brochure.pdf"> Conference Room </a></button>
 								
+								
+								<blockquote><h2>We are solving a problem about <br /> EXPERIENCE</h2></blockquote>
+
+								<div class="row">
+									<!-- <div class="colum">
+									  <img src="images/Evaluation 1.jpeg" alt="" style="width:30%"/><figcaption>Jazz Duo from the HKU Utrechts Conservatorium</figcaption>
+									</div> -->
+									
+									<div class="colum">
+									<img src="images/Schiphol 1.jpeg" alt="" style="width:80%"/><figcaption>Showcasing irido at Schiphol Airport (NL)</figcaption>
+								</div>
+								</div>
+
+								<h2>Check out some of the practical use case:</h2>
+								<img src="images/irido floor plan.png" alt="Snow" style="width:100%;">
+								<img src="images/New renovate.png" alt="Snow" style="width:80%;">
+								<hr>
+								
+								
+
 								<h2>[Insert Social Proof]</h2>
 								<p><a href="https://www.hku.nl/en/study-at-hku/music-and-technology/master-of-music-pathway-music-design?gclid=CjwKCAjwnOipBhBQEiwACyGLuilXQTP-0nvIpPBDAI4KMelmh62MK0HApEgGtkJrdHkuIpJvJo8pxhoCDZsQAvD_BwE" class="image left"><img src="images/HKU-logo.png" alt="" /><figcaption>MMus Music Technology Thesis at University of the Arts Utrecht (HKU)</figcaption></a> </p>
 								<br />
@@ -121,21 +176,16 @@
 								<br />
 								<hr />
 								
-								<div class="container">
-									<img src="images/Serverance.png" alt="Snow" style="width:100%;">
-									<div class="centered"><h3>Traditionally we have…<br /> but could we offer something different?</h2> </div>
-								  </div>
-								  <blockquote><h2>We are solving a problem about <br /> EXPERIENCE</h2></blockquote>
-								<hr />
-
+								
+								
 								<div class="row">
 									<div class="col-12 col-12-small">
 										<h2>Features</h2>
 							
-										<ul class="alt">
-											<li>Acoustic Privary (Up to 12dB)</li>
+										<ul style="list-style-type:circle;">
+											<li>Noise Mitigation (Up to 12dB)</li>
 											<li>Visual Privacy</li>
-											<li>Community Garden (Pruning is caring)</li>
+											<li>Community Garden</li>
 											<li>Multimodal Stimulus (Auditory, Visual, Olfactory)</li>
 											<li>Design for Disassembly (LEGO / Ikea like)</li>
 										</ul>
@@ -160,7 +210,7 @@
 									<header>
 										<h2><a href="https://youtube.com/@HetThirdPlace?si=Yo1o9OLkUvZU_zlM">Third Place</a></h2>
 									</header>
-									<a href="https://youtube.com/@HetThirdPlace?si=Yo1o9OLkUvZU_zlM" class="image fit"><img src="images/irido print-min.png" alt="" /></a>
+									<a href="https://youtube.com/@HetThirdPlace?si=Yo1o9OLkUvZU_zlM" class="image fit"><img src="images/thirdplace 2.png" alt="" /></a>
 									<p>A Youtube Channel with highly stylized production stem from evaluation sessions. </p>
 									<ul class="actions special">
 										<li><a href="https://youtube.com/@HetThirdPlace?si=Yo1o9OLkUvZU_zlM" class="button">Subscribe</a></li>
