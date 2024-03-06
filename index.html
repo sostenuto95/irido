@@ -14,7 +14,7 @@
 	
 	    <style> 
 			body { 
-				background: hsl(0, 35%, 64%); 
+				background: hsl(0, 8%, 85%); 
 				color: rgb(34, 33, 32); 
 			} 
 	  
@@ -23,6 +23,13 @@
 				justify-content: center; 
 				color: rgb(71, 66, 62); 
 			} 
+			h2 { 
+				display: flex; 
+				justify-content: center; 
+				margin-bottom: 2em;
+				color: rgb(225, 219, 213); 
+			} 
+
 			h3 { 
 				display: flex; 
 				justify-content: center; 
@@ -73,7 +80,7 @@
 			.button {
 				border: black;
 				border-radius: 20px;
-				color: rgb(88, 82, 82);
+				color: rgb(235, 225, 225);
 				padding: 1px 20px;
 				text-align: center;
 				display: inline-block;
@@ -82,10 +89,38 @@
 				cursor: pointer;
 				}
 
-				.button1 {background-color: #4fc2e89a;} /* Open Workspace */
+				.button1 {background-color: #70858d5a; border-radius: 20px;} /* Open Workspace */
 				.button2 {background-color: #ae5cb952;} /* Common Area */
 				.button3 {background-color: #2d323437;} /* Conference Room */
+
+				#myVideo {
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				min-width: 100%; 
+				min-height: 100%;
+				}
+
+				.content {
+				position: fixed;
+				bottom: 0;
+				background: rgba(0, 0, 0, 0.5);
+				color: #f1f1f1;
+				width: 100%;
+				padding: 20px;
+				}
+				.videoleftoffset{
+					position: relative;
+					left: -14.45%;
+				}
+				.overlayText {
+				position: absolute;
+				top: 5%;
+				left: 5%;
+				z-index: 1;
+				}
 		</style> 
+		
 
 	</head>
 	<body class="is-preload">
@@ -126,20 +161,38 @@
 
 				<!-- Main -->
 					<div id="main">
-
 						<!-- Featured Post -->
 							<article class="post featured">
+								
+								
 								<header class="major">
-									<div class="box">
-									<h2>
-										Interested in hiring irido for your space?</h2>
-							
+
+									
+									<!--
+										<video width: 100% autoplay muted loop id="myVideo">
+										<source src="images/MOR IG.webm">
+									</video>	
+
+										<iframe autoplay muted loop id="myVideo">
+										<source src="images/MOR IG.webm">
+									  </iframe>	
+									  -->	
+									  <div class="videoleftoffset">		
+									  <video autoplay muted loop src="images/MOR IG.webm" width="129%" height="100%" style="border:0.5px solid rgba(0, 0, 0, 0.008);">
+										<h2>Interested in hiring irido for your space?</h2>
+									</video>
+									</div>	
+									<div class="overlayText">
+										<h2>Interested in hiring irido for your space? </h2>
+										<button class="button1"><a href="mailto: info.sostenuto@gmail.com" class="logo">Let's talk</a>
+										</button>
 									</div>
-									<button class="button"><a href="#info.sostenuto@gmail.com" class="logo">Let's talk</a>
-									</button>
-									<br /><br />
+										
 								</header>
-								<br /><br />
+							
+							
+								
+							
 								<div class="container">
 									<blockquote><h3> Traditionally we have these acoustic treatments…<br /> but could we offer something different?</h3></blockquote>
 								
@@ -164,7 +217,8 @@
 								<br />
 								
 								<blockquote><h4>We are solving a problem about <br /> EXPERIENCE</h4></blockquote>
-
+								
+								  
 								<div class="row">
 									<div class="colum">
 										<img class="image right" src="images/TU Delft reverberation chamber.jpg" alt="" style="width:100%"/> <br /> <br /> <br /><figcaption>Acoustic properties measured at TU Delft</figcaption>
@@ -198,9 +252,12 @@
 								<br />
 								<br />
 								<br />
-								<blockquote><h4>"Physical matter is music solidified" - Pythagoras</h4></blockquote>
+								<blockquote class="q-card q-card-color-2">
+									Physical matter is music solidified
+									<div class='author'>Pythagoras</div>
+								  </blockquote>
 								<br />
-								<hr />
+								
 								
 								
 								<!--
@@ -269,7 +326,7 @@
 							
 							<section>
 								<h3>Inquiries</h3>
-								<p><a href="#info.sostenuto@gmail.com">info.sostenuto@gmail.com</a></p>
+								<p><a href="mailto: info.sostenuto@gmail.com">info.sostenuto@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Connect</h3>
