@@ -323,6 +323,42 @@ input, select, textarea {
 		border-bottom-color: #eeeeee;
 	}
 
+	.fade-in-text {
+		font-family: Arial;
+		font-size: 60px;
+		animation: fadeIn 5s;
+		-webkit-animation: fadeIn 5s;
+		-moz-animation: fadeIn 5s;
+		-o-animation: fadeIn 5s;
+		-ms-animation: fadeIn 5s;
+	  }
+	  
+	  @keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	  }
+	  
+	  @-moz-keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	  }
+	  
+	  @-webkit-keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	  }
+	  
+	  @-o-keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	  }
+	  
+	  @-ms-keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	  }
+	
+
 /* Row */
 
 	.row {
@@ -2500,7 +2536,7 @@ input, select, textarea {
 	}
 
 		select option {
-			background-color: #ffffff;
+			background-color: #cec6c6;
 			color: #212931;
 		}
 
@@ -3286,7 +3322,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		color: #ffffff;
+		color: #96b1ab;
 		padding: 8rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3326,7 +3362,7 @@ input, select, textarea {
 
 			#intro a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #79abb9 !important;
 			}
 
 		#intro strong, #intro b {
@@ -3357,7 +3393,7 @@ input, select, textarea {
 		#intro .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px #ffffff;
-			color: #ffffff !important;
+			color: #bca2a2 !important;
 		}
 
 			#intro input[type="submit"]:hover,
@@ -3365,8 +3401,8 @@ input, select, textarea {
 			#intro input[type="button"]:hover,
 			#intro button:hover,
 			#intro .button:hover {
-				box-shadow: inset 0 0 0 2px #18bfef;
-				color: #18bfef !important;
+				box-shadow: inset 0 0 0 2px #95d3e4;
+				color: #63a7ba !important;
 			}
 
 			#intro input[type="submit"].primary,
@@ -3945,7 +3981,140 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		
+		* 
+		/* Pricing list */
+		{
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Create three columns of equal width */
+  .columns {
+	float: left;
+	width: 33.3%;
+	padding: 8px;
+  }
+  
+  /* Style the list */
+  .price {
+	list-style-type: none;
+	border: 1px solid #eee;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+  }
+  
+  /* Add shadows on hover */
+  .price:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  /* Pricing header */
+  .price .header {
+	background-color: #111;
+	color: white;
+	font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+	border-bottom: 1px solid #eee;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+	background-color: #eee;
+	font-size: 20px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+	background-color: #04AA6D;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+  }
+  
+  /* Change the width of the three columns to 100%
+  (to stack horizontally on small screens) */
+  @media only screen and (max-width: 600px) {
+	.columns {
+	  width: 100%;
+	}
+  }
+  
 		}
+
 
 /* Footer */
 
