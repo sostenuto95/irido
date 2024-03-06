@@ -3035,7 +3035,7 @@ input, select, textarea {
 		}
 
 	header.major .date:before, header.major .date:after {
-		border-top-color: #eeeeee;
+		border-top-color: #eeeeee8e;
 	}
 
 /* Table */
@@ -3641,6 +3641,8 @@ input, select, textarea {
 
 		}
 
+		
+
 /* Nav */
 
 	#nav {
@@ -3900,7 +3902,7 @@ input, select, textarea {
 			}
 
 			#main > .posts > article {
-				border-color: #eeeeee;
+				border-color: #ffffff00;
 				border-left-width: 2px;
 				border-style: solid;
 				border-top-width: 2px;
@@ -3918,6 +3920,25 @@ input, select, textarea {
 				#main > .posts > article:nth-child(-n + 2) {
 					border-top-width: 0;
 				}
+
+				/* Style the video: 100% width and height to cover the entire window */
+				#myVideo {
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				min-width: 10%;
+				min-height: 10%;
+			}
+			
+			/* Add some content at the bottom of the video/page */
+			.content {
+				position: fixed;
+				bottom: 0;
+				background: rgba(0, 0, 0, 0);
+				color: #f1f1f1;
+				width: 100%;
+				padding: 20px;
+			}
 
 			@media screen and (max-width: 980px) {
 
