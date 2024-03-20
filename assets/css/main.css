@@ -2589,6 +2589,9 @@ input, select, textarea {
 	/* FAQ section */
 	.container h1{
 		color: #2f3532;
+		background: -webkit-linear-gradient(#fddfba,#eee);
+  		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 		text-align: center;
 	  }
 	  
